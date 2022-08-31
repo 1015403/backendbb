@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+
+<!--navigation bar-->
+<nav class="navigation-bar">
+    <img class="logo" src="/Reserverings_Systeem_Amy/TCR_logo.jpg">
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.php">Afspraak maken</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.php">Login</a></li>
+    </ul>
+</nav>
+
+<div class="text-block">
+    <h1>Contact</h1>
+    <p>Ervaar je problemen met het maken van een afspraak voor een stagegesprek?</p>
+    <p>Neem vooral contact met ons op!</p>
+    <p>Vul in het contact formulier je naam, studentnummer en mailadres in, samen met het probleem
+        en er word zo snel mogelijk contact met je opgenomen.</p>
+</div>
+
+<br>
+
+<div class="container">
+    <form action="contact_action.php">
+        <label for="fName">First Name</label>
+        <input type="text" id="fName" name="firstname" placeholder="Your name..">
+
+        <label for="lName">Last Name</label>
+        <input type="text" id="lName" name="lastname" placeholder="Your last name..">
+
+        <label for="opleiding">Opleiding</label>
+        <select id="opleiding" name="opleiding">
+            <option value="elektrotechniek2">Elektrotechniek niveau 2</option>
+            <option value="elektrotechniek3">Elektrotechniek niveau 3</option>
+            <option value="elektrotechniek4">Elektrotechniek niveau 4</option>
+        </select>
+
+        <label for="subject">Omschrijving probleem</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+</body>
+</html>
